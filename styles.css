@@ -1,0 +1,296 @@
+/* Global Styles */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: #264D73;
+  font-size: 2.5rem;
+}
+h2, h3 {
+  color: #444;
+  font-weight: lighter;
+}
+h3 {
+  font-size: 1.3rem;
+}
+body {
+  padding: .5rem;
+}
+@media (min-width: 600px) {
+  body {
+    padding: 0.2rem;
+  }
+}
+body, input[text] {
+  color: #333;
+  font-family: Cambria, Georgia, serif;
+}
+a {
+  cursor: pointer;
+}
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+/* Navigation link styles */
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #ee8e51;
+  color: #e8e8e8;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  color: white;
+  background-color:  #42545C;
+}
+nav a.active {
+  background-color: black;
+  color: white;
+}
+hr {
+  margin: 1.5rem 0;
+}
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+.bd-mode-toggle {
+  z-index: 1500;
+}
+body{
+  font-family: sans-serif;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input{
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  min-width: 250px;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -webkit-appearance:none;
+}
+
+.label-float input:focus{
+  border: 2px solid #3951b2;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 15px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.label-float input:required:invalid + label{
+  color: red;
+}
+.label-float input:focus:required:invalid{
+  border: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+  content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  top: 0;
+  color: #3951b2;
+}
+
+.diff {
+	display: inline-block;
+}
+.diff-level {
+	margin-left: 1.6em;
+}
+.diff-holder {
+	color: #666;
+	margin: 0;
+}
+.diff-holder span {
+	color: #AAA;
+}
+del.diff {
+	text-decoration: none;
+	color: #b30000;
+	background: #fadad7;
+}
+ins.diff {
+	background: #eaf2c2;
+	color: #406619;
+	text-decoration: none;
+}
+del.diff-key {
+	border: 1px solid #f8a4a4;
+}
+ins.diff-key {
+	border: 1px solid #a3ce4c;
+	margin-top: -1px;
+	position: relative;
+}
+ins.diff span {
+	color: #AABF40;
+}
+del.diff span {
+	color: #EE8177;
+}
+
+
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+}
+td {
+	width: 33%;
+	vertical-align: top;
+	text-align: center;
+}
+#result, textarea {
+	height: 99%;
+	width: 99%;
+	margin: auto;
+	font: 1em monospace;
+	text-align: left;
+	white-space: pre-wrap;
+}
+.footer {
+	position: absolute;
+	padding: .2em .5em;
+	right: 10px;
+	bottom: 0;
+}
+
+.error {
+	color: #600;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* In Firefox and Opera all these stuff disables default outline for textarea. Do it just for WebKit. */
+	textarea {
+		border: 1px solid #DDD;
+	}
+	textarea:focus {
+		border-color: #6699cc;
+	}
+	.error {
+		background-color: #fffafa;
+		border-color: #deb1b1;
+		outline-color: #ff7f7f;
+	}
+	.error:focus {
+		border-color: #c46969;
+	}
+}

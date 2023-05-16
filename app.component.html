@@ -1,0 +1,19 @@
+<main>
+<nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+  <div class="container-fluid">
+    <h1 class="navbar-brand" href="#">Meridian Temporal DB</h1>
+    
+  </div>
+</nav>
+<div class="wrapper">
+  <nav>
+    <a routerLink="/defineIndexSchema" routerLinkActive="active" ariaCurrentWhenActive="page">Define Index Schema</a>
+    <a routerLink="/loadSampleData"  routerLinkActive="active"  ariaCurrentWhenActive="page">Stream Sample Data</a>
+    <a routerLink="/searchIndexData" routerLinkActive="active"  ariaCurrentWhenActive="page">Search Index Data</a>
+  </nav>
+  <div [@routeAnimation]="getRouteAnimationData()">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- <router-outlet name="popup"></router-outlet> -->
+</div>
+</main>
