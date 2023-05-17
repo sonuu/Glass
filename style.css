@@ -1,0 +1,162 @@
+html, body {
+	background: #EEE;
+	font: 12px sans-serif;
+	margin: 0;
+}
+html, body, table, tbody, tr, td {
+	height: 100%
+}
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+}
+td {
+	width: 33%;
+	vertical-align: top;
+	text-align: center;
+}
+#result, textarea {
+	height: 570px;
+	overflow: auto;
+	width: 99%;
+	margin: auto;
+	font: 1em monospace;
+	text-align: left;
+	white-space: pre-wrap;
+}
+.footer {
+	position: absolute;
+	padding: .2em .5em;
+	right: 10px;
+	bottom: 0;
+}
+
+.error {
+	color: #600;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* In Firefox and Opera all these stuff disables default outline for textarea. Do it just for WebKit. */
+	textarea {
+		border: 1px solid #DDD;
+	}
+	textarea:focus {
+		border-color: #6699cc;
+	}
+	.error {
+		background-color: #fffafa;
+		border-color: #deb1b1;
+		outline-color: #ff7f7f;
+	}
+	.error:focus {
+		border-color: #c46969;
+	}
+}
+
+/*service*/
+
+.services a {
+	text-decoration: none;
+  }
+  .services .service-box {
+	text-align: center;
+  }
+  .services .service-box h2 {
+	color: #222;
+	font-size: 20px;
+	padding-top: 10px;
+	text-decoration: none;
+  }
+  .services a .service-box:hover h2 {
+	color: #FB0626;
+  }
+  .services .investor-box {
+	  background-color: #e6e6e6;
+	  background-position: center center;
+	  padding: 20px;
+	  width: 100%;
+	  min-height: 150px;
+	  display: block;
+	  position: relative;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .services .investor-box h2 {
+	font-size: 20px;
+  }
+  .services .investor-box .flip-view {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: rgb(89, 83, 83);
+	left: -10%;
+	padding: 20px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: all ease-in-out 333ms;
+  }
+  .services .investor-box a {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+  }
+  .services .investor-box:hover .flip-view {
+	  left: 0;
+	  visibility: visible;
+	  opacity: 1;
+  }
+  #defineIndexSchema{display: none;}
+  #loadSampleData{display: none;}
+  #searchIndexData{display: none;}
+
+  .imageContainer{
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+  .rsu{
+    background: url("../images/annualRsu.png");
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    height: 117%;
+  }
+  .stockPurchase{
+    background: url("../images/espp.png");
+    background-position: center;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .logoContainer{
+    width: 75px;
+    height: 70px;
+    float: left;
+  }
+  .financialWellness{
+    background: url("../images/financialWellness.png");
+    background-position: center;
+    background-size: 100%;
+  /* }
+  .retirementServices{
+    background: url("../images/retirementServices.png");
+    background-position: center;
+    background-size: 100%;
+  }
+  .longTermIncentive{
+    background: url("../images/longTermIncentive.png");
+    background-position: center;
+    background-size: 100%;
+  }
+  .annuityServices{
+    background: url("../images/annuityServices.jpeg");
+    background-position: center;
+    background-size: 100%;
+  }
+  nav{
+background: radial-gradient(circle, rgba(213,213,213,1) 0%, rgba(242,242,242,1) 79%);
+  } */

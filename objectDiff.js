@@ -281,37 +281,3 @@ objectDiff.diffOwnProperties = function diffOwnProperties(a, b) {
 		}
 	}
 })();
-var a = document.getElementById('a');
-var b = document.getElementById('b');
-var result = document.getElementById('result');
-window.onload =
-a.onpaste = a.onchange = a.oninput =
-b.onpaste = b.onchange = b.oninput = function changed(e) {
-
-	var aError;
-    try {
-		var aObj = eval('(' + a.value + ')');
-    } catch (e) {
-		aError = true;
-		a.className = 'error';
-	}
-	if (!aError) {
-		a.className = '';
-	}
-
-	var bError;
-	try {
-		var bObj = eval('(' + b.value + ')');
-	} catch (e) {
-		bError = true;
-		b.className = 'error';
-	}
-	if (!bError) {
-		b.className = '';
-	}
-
-	if (!bError && !aError) {
-		var diff = objectDiff.diffOwnProperties(aObj, bObj);
-		result.innerHTML = objectDiff.convertToXMLString(diff);
-	}
-};
